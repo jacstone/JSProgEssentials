@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(134, 221, 214);
+    color: rgb(65, 35, 11);
+    background-image: url('./travelBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Navigation Bar */
+
+nav {
+    display: flex;
+    background-color: #ffcc00;
+    color: rgb(65, 35, 11);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(65, 35, 11);
+
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(245, 133, 42);
+}
+
+a:visited {
+    color: rgb(65, 35, 11);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: left;
+}
+
+nav img {
+    width: 10%;
+    height: auto;
+}
+
+/* Logo Container styles */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10%;
+}
+
+.logo-container img {
+    width: 25%;
+    margin-right: 10px;
+
+}
+
+.logo-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(65, 35, 11);
+
+}
+
+/* Content Container styles */
+.content {
+    align-content: flex-end;
+    border: 2px;
+    padding: 10px;
+    border-color: #ffcc00;
+    border-style: solid;
+}
+
+.content h2 {
+    text-decoration-line: underline;
+    padding-bottom: 10px;
+
+}
+
+/* About Us styles */
+
+.AboutUs-context {
+    border: 2px;
+    border-style: solid;
+    border-color: #ffcc00;
+    padding: 10px;
+    width: 80%;
+}
+
+.AboutUs-contact {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    list-style: none;
+}
+
+.AboutUs-contact ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.AboutUs-contact li {
+    border: 2px;
+    border-style: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffcc00;
+}
+
+/*Contact Us Style*/
+.contact-us {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ffcc00;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 50%
+}
+label {
+    display: inline-block;
+    width: 19%;
+
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 80%;
+    padding: 5px;
+}
+button[type="submit"] {
+    padding: 7px 15px;
+    background-color: #ffcc00;
+    color: rgb(65, 35, 11);
+    border: none;
+    cursor: pointer;
+    
+}
