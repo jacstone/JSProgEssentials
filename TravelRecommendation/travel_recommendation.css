@@ -64,6 +64,11 @@ nav img {
     height: auto;
 }
 
+nav input[type="text"] {
+    width: 200px;
+    padding: 5px;
+}
+
 /* Logo Container styles */
 
 .logo-container {
@@ -85,20 +90,57 @@ nav img {
     color: rgb(65, 35, 11);
 
 }
+/* Travel Recommendation styles */
+.travel_recommendation {
+    display: flex;
+    flex-direction: space-between;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 /* Content Container styles */
 .content {
-    align-content: flex-end;
+    vertical-align: middle;
     border: 2px;
     padding: 10px;
-    border-color: #ffcc00;
-    border-style: solid;
+    width: 50%;
 }
 
 .content h2 {
     text-decoration-line: underline;
     padding-bottom: 10px;
 
+}
+
+/* Results Section styles */
+#result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+#result h2 {
+    text-decoration-line: underline;
+    padding-bottom: 10px;
+}
+#result h3 {
+    font-weight: bold;
+    font-style: italic;
+}
+#result p {
+    font-style: italic;
+}
+#result img {
+    list-style: none;
+    padding: 0;
+    width: 100%;
 }
 
 /* About Us styles */
@@ -115,7 +157,7 @@ nav img {
     padding: 10px;
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     list-style: none;
 }
 
@@ -142,30 +184,33 @@ nav img {
     padding: 20px;
     border: 2px solid #ffcc00;
 }
+
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
     max-width: 50%
 }
-label {
+
+#contactForm label {
     display: inline-block;
     width: 19%;
 
 }
 
-input[type="text"],
-input[type="email"],
-select,
-textarea {
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm select,
+#contactForm textarea {
     width: 80%;
     padding: 5px;
 }
-button[type="submit"] {
+
+#contactForm button[type="submit"] {
     padding: 7px 15px;
     background-color: #ffcc00;
     color: rgb(65, 35, 11);
     border: none;
     cursor: pointer;
-    
+
 }
